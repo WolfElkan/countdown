@@ -1,0 +1,57 @@
+<title>Countdown</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="click.js"></script>
+
+<center>
+	<!-- <div class="target margin" id="target">952</div> -->
+	<div class="target margin" id="target">000</div>
+	<button onclick="generate_target()">Generate</button>
+	<div class="chosen margin">
+
+<!-- 		<div class="card n100"><div>100</div></div>
+		<div class="card n75"><div>75</div></div>
+		<div class="card n50"><div>50</div></div>
+		<div class="card n25"><div>25</div></div>
+		<div class="card n10"><div>10</div></div>
+		<div class="card n3"><div>3</div></div> -->
+ 
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+
+
+	</div>
+
+
+	<button onclick="choice(4)">4 Large + 2 Small</button>
+	<button onclick="choice(3)">3 Large + 3 Small</button>
+	<button onclick="choice(2)">2 Large + 4 Small</button>
+	<button onclick="choice(1)">1 Large + 5 Small</button>
+	<button onclick="choice(0)">0 Large + 6 Small</button>
+	<button onclick="choice(null)">Surprise Me!</button>
+	<button onclick="choice(null, 0)">Surprise Me Quickly</button>
+
+	<!-- <div id="time">30</div> -->
+
+	<div class="operators">
+		<button onclick="op_click(ADD)" class="operator" id="add">&plus;</button>
+		<button onclick="op_click(SUB)" class="operator" id="sub">&minus;</button>
+		<button onclick="op_click(MUL)" class="operator" id="mul">&times;</button>
+		<button onclick="op_click(DIV)" class="operator" id="div">&divide;</button>
+		<button onclick="equals()" class="operator" id="eq">=</button>
+	</div>
+	<button onclick="reset()">Reset</button>
+</center>
+
+<div id="previous"></div>
+<div id="current"></div>
+
+<!-- <div class="log num impfrac"><div class="whole w1">8</div><table class="fraction"><tr><td class="numer">3</td></tr><tr><td class="denom">17</td></tr></table></div> -->
+<!-- <div id="previous"><div class="recent"><div class="log num">66</div><div class="log op">÷</div><div class="log num">8</div><div class="log eq">=</div><div class="impfrac log result available"><div class="whole w8">8</div><table class="fraction"><tr><td class="numer">1</td></tr><tr><td class="denom">4</td></tr></table></div></div></div> -->
+<!-- <div id="previous"><div class="recent"><div class="log num">66</div><div class="log op">÷</div><div class="log num">1</div><div class="log eq">=</div><div class="impfrac log result available"><div class="whole w8">1</div><table class="fraction"><tr><td class="numer">1</td></tr><tr><td class="denom">4</td></tr></table></div></div></div> -->
+<!-- <div class="recent"><div class="num log">4</div><div class="log op">×</div><div class="num log">7</div><div class="log op">×</div><div class="num log">280</div><div class="log eq">=</div><div class="num log result solved">280</div></div> -->

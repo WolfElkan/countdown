@@ -1,0 +1,161 @@
+button {
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.card div, .target {
+	font-family: "Futura";
+	font-weight: bold;	
+}
+
+.margin {
+	margin: 10px;
+}
+
+.target {
+/*		height: 180px;*/
+	width: 350px;
+	background-color: #0b01c3;
+	color: white;
+	text-shadow: black;
+	border: solid black 2px;
+	font-size: 150px;
+	text-align: center;
+}
+
+.chosen > div {
+	display: inline-block;
+/*	background-color: #3b7dc2;*/
+	background-color: gray;
+	width: 150px;
+	height: 142px;
+	border: solid black 2px;
+	color: white;
+	font-size: 100px;
+	padding-top: 8px;
+}
+
+.n100 div {
+	transform:scale(0.7,1) translate(-30px);
+	text-align: center;
+}
+
+.n10 div, .n12 div {
+	transform:scale(1,1) translate(-5px);
+	text-align: center;
+}
+
+.options {
+	width: 650px;
+	display: none;
+}
+
+.card {
+	background-color: gray;
+	width: 80px;
+	height: 80px;
+	border: solid black 2px;
+	display: inline-block;	
+}
+
+.card.available {
+	background-color: #3b7dc2;
+}
+
+.log.available {
+	background-color: lightblue;
+}
+
+#time {
+	font-family: serif;
+	font-weight: normal;
+	font-size: 30px;
+	margin: 50px;
+}
+
+
+div.operators {
+	margin: 10px;
+}
+
+.operator {
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	vertical-align: text-top;
+	padding-bottom: 4px;
+}
+
+.log {
+	display: inline-block;
+	text-align: top;
+}
+
+.target.solved {
+	background-color: green;
+}
+
+.log {
+	font-family: Latin Modern Math;
+	font-size: 24px;
+	margin: 5px 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+.log.num, .log.op, .log.eq {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.log.frac {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.log.solved {
+	font-family: Latin Modern Roman;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 0;
+	padding-top: 0;
+
+}
+
+.whole, .fraction {
+	display: inline-block;
+}
+
+.whole {
+	padding: 8px 2px 0 0;
+	vertical-align: top;
+}
+
+.numer, .denom {
+	font-size: 16px;
+	text-align: center;
+}
+
+.numer {
+	border-bottom: solid black 1px;
+}
+
+.denom {
+	border-top: solid black 1px;
+}
+
+.fraction {
+	border-collapse: collapse;
+}
+
+#current, #previous {
+/*	align-content: top;*/
+/*	align-items: top;*/
+/*	vertical-align: text-top;*/
+}
+
+
+.w0 {
+	display: none;
+}
