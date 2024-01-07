@@ -1,5 +1,5 @@
-const ALLOW_FRACTIONS = true
-// const ALLOW_FRACTIONS = false
+// const ALLOW_FRACTIONS = true
+const ALLOW_FRACTIONS = false
 
 const ASSUME_EQUAL = true
 // const ASSUME_EQUAL = false
