@@ -204,7 +204,7 @@ class Operation {
 			}
 			return result
 		} else {
-			var result = 0
+			var result = numbers[0]
 			for (var i = 1; i < numbers.length; i++) {
 				result += numbers[i]
 			}
@@ -470,7 +470,7 @@ function parse_fraction(number) {
 }
 
 function click_num(number) {
-	CALC.buffer.push(number)
+	CALC.buffer.push(ALLOW_FRACTIONS ? number : Number(number))
 	CALC.last = 'num'
 	// console.log(number)
 }
