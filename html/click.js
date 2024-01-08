@@ -159,7 +159,7 @@ Fraction.div = (a, b) => {
 
 
 class Operation {
-	constructor(symbol, html) {
+	constructor(symbol, html='quest') {
 		this.symbol = symbol
 		this.html = `&${html};`
 	}
@@ -519,6 +519,9 @@ function equals() {
 }
 
 function op_click(operation) {
+	if (!CALC.op.op_clickable()) {
+		return false
+	}
 	if (CALC.op.symbol && CALC.op.symbol != operation.symbol) {
 		if (ASSUME_EQUAL) {
 			equals()
