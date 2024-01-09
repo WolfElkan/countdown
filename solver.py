@@ -407,6 +407,7 @@ def find_possible(nlarge=None, **kwargs):
 # find_possible(1, xlarge=(100,))
 # find_possible(2, xlarge=(75, 100), start_after=(8,9,9,10))
 # find_possible(4, special=True)
+# find_possible(0)
 
 # solve(261, 7,7,10,6,6,8, eval_function=replace_eval)
 # solve(869,50,100,6,8,5,7, eval_function=replace_eval)
